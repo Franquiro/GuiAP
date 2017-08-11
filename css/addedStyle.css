@@ -26,3 +26,12 @@ li.documento{list-style-image:url('../img/icons/docs-icon.png');}
 
 li.spreadsheet{list-style-image: url('../img/icons/spreadsheets-icon.png');}
 .spreadsheet a{vertical-align:50%;}
+
+#variables h2{
+	font-size:24px;
+}
+#variables ul{
+	width:75%;
+	margin-left:12%;
+	text-align:left;
+}
