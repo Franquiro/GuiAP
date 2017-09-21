@@ -477,23 +477,22 @@
  								<ol><strong>Algunas propiedades útiles son:</strong>
 									<li><p><strong>font-family: </strong>
 													Define la tipografía del elemento seleccionado. La propiedad <em>font-family</em> puede tener varias tipografías almacenadas, en caso de que el navegador no pueda mostrar alguna.
-													Existen dos tipos de nombres de familia tipográfica:
+                                        Existen dos tipos de nombres de familia tipográfica:</p>
 														<ul>
 															<li><p><strong>Nombre de Familia:</strong> El nombre particular de un tipo de letra determinado. <em>"arial", "times", "courier", etc</em></p></li>
 															<li><p><strong>Familia Genérica:</strong> El nombre genérico de un tipo de letra.<em>"serif", "sans-serif", "cursive", "fantasy", "monospace"</em></p></li>
 														</ul>
-													Primero ponemos el tipo de letra que queremos mostrar, luego una familia genérica en caso tal que el navegados no pueda mostrar la tipografía deseada. Todos los valores se separan por comas.</p>
+													<p>Primero ponemos el tipo de letra que queremos mostrar, luego una familia genérica en caso tal que el navegados no pueda mostrar la tipografía deseada. Todos los valores se separan por comas.</p>
 													<p>Ejemplo: <strong>font-family: arial, sans-serif;</strong></p>
 									</li>
 
 									<li><p><strong>font-size:</strong> Define el tamaño de la letra. Por defecto especificaremos los tamaños de letra en <em>Pixels</em>(px) pero existen otros valores que se pueden implementar.</p></li>
 
-									<li><p><strong>color:</strong> Define el color de un elemento. Comunmente, el valor del color lo pondremos en hexadecimal o rgb de la siguiente manera:
+									<li><p><strong>color:</strong> Define el color de un elemento. Comunmente, el valor del color lo pondremos en hexadecimal o rgb de la siguiente manera:</p>
 														<ul>
 															<li><p>Hexadecimal - color: #A538FF;</p></li>
 															<li><p>RGB - color: rgb(165, 56, 255);</p></li>
 														</ul>
-										</p>
 									</li>
 
 									<li><p><strong>background-color:</strong>Define el color de fondo de un elemento. Los colores se especifican de la misma manera que en la propiedad <em>color</em></p></li>
@@ -546,20 +545,22 @@
                                 <h2>Glosario</h2>
                                 <p class="item-intro text-muted"></p>
                                 <img class="img-responsive img-centered" src="img/portfolio/javascript.png" alt="">
-								<p>Contenido no disponible temporalmente</p><!--
+								<!--<p>Contenido no disponible temporalmente</p>-->
                                 <div id="programar" class="centered">
 								<p><strong>Programar</strong> no es mas que dar instrucciones a una computadora, en un lenguaje que ella pueda interpretar y responder.</p>
 								<p>En el caso de <em>JavaScript</em>, y este curso, vamos a estar programando instrucciones para el navegador, es por ello que todos los programas que realicemos
 								estarán vinculados directamente a una página web. A continuación veremos algunas de las instrucciones que podemos darle a nuestro navegador.</p>
-								<ul><h3>Mostrar Datos</h3>
-									<li><p><em><strong>console.log</strong>("texto");</em></p></li>
-								</ul>
+                                    <h2>Vincular un archivo de JS con un archivo HTML</h2>
+                                    <p class="text-justify"> Una vez que tengamos creado nuestro archivo de JavaScript (.js) es muy fácil vincularlo con nuestro documento HTML.<br>Lo que debemos hacer es abrir una nueva etiqueta <em>script</em> y decirle que tipo de documento vamos a vincular (con el atributo <em>type</em>) y a donde se encuentra dicho documento (con el atributo <em>src</em>). A continuación tenemos un ejemplo de cómo se vería una vinculación genérica:</p>
+                                    <p class="text-center"><strong><span style="color: blue;">&lt;script</span> <span style="color: red;">type</span> = </strong><em><span style="color: darkcyan;">"text/javascript"</span></em> <strong><span style="color: red;"> src = </span></strong><em><span style="color: darkcyan;">"programa.js"</span></em><strong><span style="color: blue;"> &gt; &lt;/script&gt;</span></strong></p>
+								<h3>Mostrar Datos</h3>
+									<p><em><strong>console.log</strong>("texto");</em></p>
 								</div>
 								<div id="variables">
 									<h1>Variables</h1>
 									<p>Una <em>variable</em> es un espacio de memoria en la computadora reservado para almacenar un valor de nuestro programa.</p>
 									<h2>Nombramiento de Variables</h2>
-									<ul><strong>Existen ciertas reglas al momento de nombrar variables que debemos tomar en cuenta:</strong>
+                                    <ul><p><strong>Existen ciertas reglas al momento de nombrar variables que debemos tomar en cuenta:</strong></p>
 										<li>Los nombres de las variables pueden contener: Letras, números, guión bajo y signo pesos.</li>
 										<li>Los nombres de las variables no pueden empezar con un número.</li>
 										<li>Los nombres de las variables distinguen entre mayúsculas y minúsculas.</li>
@@ -567,9 +568,24 @@
 									</ul>
 									
 									<h2>Declaración de Variables:</h2>
-									<p>Para declarar una variable nueva, basta con usar el prefijo <strong>var</strong> seguido del nombre de la variable.
+									<p class="text-justify">Para declarar una variable nueva, basta con usar el prefijo <strong>var</strong> seguido del nombre de la variable.
 									Si se va a asignar un valor a dicha variable al momento de declararla, quedaría de la siguiente manera: <strong>var x = 5;</strong> 
 									En caso que el valor vaya a ser asignado mas adelante, basta con declarar <strong>var x;</strong></p>
+                                    
+                                    <h2>¿Qué puedo guardar en una variable?</h2>
+                                    <p class="text-justify">En una variable puedo guardar varios tipos de <em>cosas</em>. En el ejemplo anterior, vimos como en una variable <strong>x</strong> se asignaba el valor <strong>5</strong>. Este valor, es lo que conocemos como un "<em>número entero</em>" o <strong>int</strong>. Veamos que otros tipos de datos podemos almacenar, y como se vería escrito en código.</p>
+                                    <ul>
+                                        <!-- INTS -->
+                                        <li><p class="text-justify"><strong>int o integer: </strong>este tipo de dato, es el que se encarga de almacenar números enteros (es decir, sin decimales). una variable que almacena un número entero se vería de la siguiente manera:</p><p class="text-center"><strong>var</strong> <em>x</em> = 5<strong>;</strong></p> </li>
+                                        <!-- FLOATS -->
+                                        <li><p class="text-justify"><strong>float:</strong> los valores del tipo <em>float</em> son todos aquellos valores numéricos que no sean enteros. Cualquier valor que lleve una coma decimal será almacenado con este tipo de variable. Hay que notar, que en programación no trabajaremos con <em>coma decimal</em> sino con <em>punto decimal</em>. De esta manera, la declaración de una variable del tipo float se vería de la siguiente manera:</p>
+                                        <p class="text-center"><strong>var</strong> <em>x</em> = 3.5<strong>;</strong></p></li>
+                                        <!-- STRINGS -->
+                                        <li><p class="text-justify"><strong>string:</strong> Cuando hablamos de <em>strings</em>, estamos hablando de cadenas de caracteres. Si definimos un caracter como una letra, por ejemplo <em>'a'</em> podemos decir que un string es un conjunto de caracteres, por ejemplo <em>"albatros"</em>. De esta manera, podemos almacenar, en una variable una palabra o frase con el tipo de variable string. es importante notar que, al momento de declarar un string, el texto que queremos almacenar debe ir entre comillas. Por ejemplo:</p>
+                                        <p class="text-center"><strong>var</strong> <em>nombre</em> = <em>"bienvenido a javascript"</em> <strong>;</strong></p></li>
+                                    </ul>
+                                    <p class="text-justify">Es importante notar que, si bien tenemos múltiples tipos de datos que podemos almacenar en la memoria, no es necesario indicarle al lenguaje que tipo de variable vamos a declarar. ¡JavaScript se encargará de asignar el tipo de variable que corresponda al tipo de dato que ingresemos automaticamente!</p>
+                                    <h2></h2>
 								</div>
 								
 								<div id = "condicionales">
@@ -583,7 +599,6 @@
 								
 								<div id="arreglos">
 								</div>
-                                -->
 								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                             </div>
                         </div>
