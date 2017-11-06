@@ -30,6 +30,9 @@ li.spreadsheet{list-style-image: url('../img/icons/spreadsheets-icon.png');}
 li.folder{list-style-image: url('../img/icons/folder-icon.png');}
 .folder a{vertical-align: 50%;}
 
+li.pdf{list-style-image: url('../img/icons/pdf-icon.png');}
+.pdf a{vertical-align: 50%;}
+
 #variables h2{
 	font-size:24px;
 }
